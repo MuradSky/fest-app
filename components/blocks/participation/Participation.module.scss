@@ -1,0 +1,32 @@
+.block {
+    padding: 75px 0 100px;
+}
+.title {
+    margin-bottom: 18px;
+}
+
+.block .text {
+    margin-bottom: 124px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+    &:first-child {
+        max-width: 500px;
+        margin-right: 32px;
+    }
+
+    &:last-child {
+        max-width: 590px;
+    }
+}
+
+.btn {
+    width: 100%;
+    max-width: 384px;
+}
