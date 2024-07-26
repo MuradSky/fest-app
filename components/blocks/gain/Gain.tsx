@@ -25,13 +25,26 @@ const Gain = () => {
             <Title as="h2">Participants will gain:</Title>
 
             <ul className={styles.list}>
-                {data.map((item: Model)=> (
+                {data.map((item: Model) => (
                     <li key={item.id} className={styles.card}>
-                        <Image src={item.icon} alt="" width={44} height={44} />
+                        <Image src={item.icon} alt="" width={44} height={44}/>
                         <Text>{item.text}</Text>
                     </li>
                 ))}
             </ul>
+            <div className={styles.d1}>
+                <Image src="/svg/decor/g-d1.svg" alt="" width={50} height={50}/>
+            </div>
+            <div className={styles.d2}>
+                <Image src="/svg/decor/g-d2.svg" alt="" width={20} height={20}/>
+            </div>
+            <div className={styles.d3}>
+                <Image src="/svg/decor/g-d3.svg" alt="" width={32} height={32}/>
+            </div>
+
+            <div className={styles.d4}>
+                <Image src="/svg/decor/g-d3.svg" alt="" width={20} height={20}/>
+            </div>
         </div>
     );
 };

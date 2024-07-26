@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import Link from "next/link";
 import Image from "next/image";
 import Target from "@/components/ui/target";
-import Navigation from "@/components/molecules/navigation";
+import Navigation from "@/components/organism/navigation";
 import classNames from "classnames";
 
 const target = [

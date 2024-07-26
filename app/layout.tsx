@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/molecules/header";
-import classNames from "classnames";
-import Footer from "@/components/molecules/footer";
+import Header from "@/components/organism/header";
+import Footer from "@/components/organism/footer";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({
+    subsets: ["latin"],
+    display: 'swap',
+});
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -13,10 +15,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-    const fontsClass = classNames(raleway.className)
     return (
         <html lang="en">
-            <body className={fontsClass}>
+            <body className={raleway.className}>
                 <Header />
                 <main className="container">
                     {children}

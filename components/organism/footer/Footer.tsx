@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import styles from './Footer.module.scss';
-import Navigation from "@/components/molecules/navigation";
-import Brands from "@/components/molecules/brands";
+import Navigation from "@/components/organism/navigation";
+import Brands from "@/components/organism/brands";
 import Target from "@/components/ui/target";
 import Button from "@/components/ui/button";
 
